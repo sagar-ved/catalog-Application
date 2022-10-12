@@ -10,7 +10,7 @@ class Homepage extends StatelessWidget {
     const String name = "Sagar ved";
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
+        //backgroundColor: Colors.blueAccent,
         title: Text("Catalog Application"),
       ),
       body: Center(
@@ -19,7 +19,7 @@ class Homepage extends StatelessWidget {
         ),
       ),
       drawer: Drawer(
-        backgroundColor: Colors.lightBlueAccent,
+        //backgroundColor: Colors.lightBlueAccent,
       ),
     );
   }
