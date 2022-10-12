@@ -1,5 +1,6 @@
 import 'package:check/Pages/Home_Page.dart';
 import 'package:check/Pages/Login_page.dart';
+import 'package:check/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 // import 'dart:ui';
@@ -22,11 +23,11 @@ import 'package:google_fonts/google_fonts.dart';
             primarySwatch: Colors.blueGrey,
             fontFamily: GoogleFonts.raleway().fontFamily
           ),
-          initialRoute: "/login",
+         initialRoute: "/login",
           routes: {
             "/": (context) =>  Loginpage(),
-            "/Home": (context) => Homepage(),
-            "/login": (context) =>Loginpage(),
+            myRoutes.homeRoute: (context) => Homepage(),
+            myRoutes.loginRoute: (context) => Loginpage(),
           },
         );
       }  
